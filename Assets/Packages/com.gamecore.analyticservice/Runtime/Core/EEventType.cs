@@ -1,6 +1,6 @@
 namespace GameCore.AnalyticService
 {
-    public enum EventType
+    public enum EEventType
     {
         /// <summary>
         ///     Arbitrary event.
