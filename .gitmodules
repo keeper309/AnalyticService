@@ -1,0 +1,6 @@
+[submodule "Assets/External/LoggerService"]
+	path = Assets/External/LoggerService
+	url = git@github.com:keeper309/LoggerService.git
+[submodule "Assets/External/GeneralExtensions"]
+	path = Assets/External/GeneralExtensions
+	url = git@github.com:keeper309/GeneralExtensions.git
