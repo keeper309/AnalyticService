@@ -114,7 +114,7 @@ namespace GameCore.AnalyticService
 
                 string id = words[0];
                 string adjustToken = words[1];
-                EventType type = ParseEventType(words[2]);
+                EEventType type = ParseEventType(words[2]);
 
                 string[] attachedEvents = words[3]
                     .Split('|')
@@ -128,13 +128,13 @@ namespace GameCore.AnalyticService
             return events;
         }
 
-        private EventType ParseEventType(string type)
+        private EEventType ParseEventType(string type)
         {
             type = type.Trim();
             switch (type)
             {
-                case AnalyticServiceConstants.EventTypeGeneric: return EventType.Generic;
-                case AnalyticServiceConstants.EventTypeFunnel: return EventType.Funnel;
+                case AnalyticServiceConstants.EventTypeGeneric: return EEventType.Generic;
+                case AnalyticServiceConstants.EventTypeFunnel: return EEventType.Funnel;
             }
 
             throw new ArgumentOutOfRangeException();
@@ -159,10 +159,10 @@ namespace GameCore.AnalyticService
         {
             public string Id { get; }
             public string AdjustToken { get; }
-            public EventType Type { get; }
+            public EEventType Type { get; }
             public IReadOnlyCollection<string> AttachedEvents { get; }
 
-            public ZipEvent(string id, string adjustToken, EventType type, IReadOnlyCollection<string> attachedEvents)
+            public ZipEvent(string id, string adjustToken, EEventType type, IReadOnlyCollection<string> attachedEvents)
             {
                 Id = id;
                 AdjustToken = adjustToken;

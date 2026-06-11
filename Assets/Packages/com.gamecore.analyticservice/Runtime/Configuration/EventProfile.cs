@@ -10,7 +10,7 @@ namespace GameCore.AnalyticService
     {
         [SerializeField] public string eventId;
 
-        [SerializeField] public EventType eventType;
+        [SerializeField] public EEventType eventType;
 
         [SerializeField] public AnalyticsProviderId[] providers;
 
@@ -25,7 +25,7 @@ namespace GameCore.AnalyticService
         [SerializeField] public List<EventReference> attachedEvents;
 
         public IReadOnlyCollection<string> Providers => providers?.Select(p => p.ProviderId).ToArray() ?? Array.Empty<string>();
-        public EventType EventType => eventType;
+        public EEventType EventType => eventType;
         public string EventId => eventId;
 
         public IReadOnlyCollection<string> Parameters => GetParameters();
@@ -37,7 +37,7 @@ namespace GameCore.AnalyticService
 
         public EventProfile(
             string eventId,
-            EventType eventType,
+            EEventType eventType,
             AnalyticsProviderId[] providers = null,
             Parameter[] observableParameters = null,
             ParametersCategory[] categories = null,
