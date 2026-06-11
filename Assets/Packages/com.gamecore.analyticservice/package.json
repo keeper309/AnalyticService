@@ -1,0 +1,22 @@
+{
+    "name": "com.gamecore.generalextensions",
+    "version": "0.0.1",
+    "displayName": "AnalyticService",
+    "description": "Analytic wrapper with different analytic providers posibility",
+    "unity": "6000.3",
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+    },
+    "keywords": [
+        "AnalyticService"
+    ],
+    "contributors": [
+        "Ognev Aleksandr"
+    ],
+    "documentationUrl": "",
+    "author": {
+        "name": "Ognev Aleksandr",
+        "email": "keeper309@gmail.com",
+        "url": "https://github.com/keeper309"
+    }
+}
