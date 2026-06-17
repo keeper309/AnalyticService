@@ -7,6 +7,25 @@
       "dependencies": {},
       "hash": "e5acc106ee196bc5a32fb14cdf2987b0f96d11e0"
     },
+    "com.gamecore.generalextensions": {
+      "version": "https://github.com/keeper309/GeneralExtensions.git?path=Assets/Packages/com.gamecore.generalextensions",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.gamecore.loggerservice": "0.0.1"
+      },
+      "hash": "b3b3692ab93da155022abf0c63be968ccdcaaf9f"
+    },
+    "com.gamecore.loggerservice": {
+      "version": "https://github.com/keeper309/LoggerService.git?path=Assets/Packages/com.gamecore.loggerservice",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cysharp.unitask": "2.5.11"
+      },
+      "hash": "64496ce6cba07cf3f6b460afbade604083c61c17"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.2",
       "depth": 0,
